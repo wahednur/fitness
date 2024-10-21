@@ -1,3 +1,79 @@
-.fit {
-  font-size: 100px;
+/* Import inter font  */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/* Import miama font  */
+@import url("https://fonts.cdnfonts.com/css/miama");
+/* font-family: 'Miama', sans-serif; */
+/* rest css start  */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* rest css end  */
+
+/* Variable declaration  */
+:root {
+  --primary: #e6533c;
+  --sm-text: #ffffff80;
+  --white: #fff;
+  --black: #000;
+}
+
+/* Global css start  */
+div,
+header,
+nav,
+section,
+footer {
+  display: block;
+  float: left;
+}
+/* Button  */
+
+body {
+  background-color: var(--black);
+  font-family: "Inter", sans-serif;
+}
+.btn-fill,
+.btn-out:hover {
+  background: var(--primary);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 40px;
+  color: var(--white);
+  transition: all ease-in-out 0.3s;
+  border-radius: 45px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  border: 1px solid var(--primary);
+}
+.btn-out,
+.btn-fill:hover {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 40px;
+  color: var(--white);
+  transition: all ease-in-out 0.3s;
+  border-radius: 45px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  background: transparent;
+  border: 1px solid var(--white);
+}
+
+/* Global css end  */
