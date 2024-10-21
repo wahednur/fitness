@@ -31,19 +31,23 @@ a {
 }
 
 /* Global css start  */
-div,
 header,
 nav,
 section,
 footer {
   display: block;
   float: left;
+  width: 100%;
 }
 /* Button  */
 
 body {
   background-color: var(--black);
   font-family: "Inter", sans-serif;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
 }
 .btn-fill,
 .btn-out:hover {
@@ -95,3 +99,115 @@ body {
   letter-spacing: 0.3px;
 }
 /* Global css end  */
+
+/* Header css start  */
+header {
+  background: linear-gradient(180deg, #111 0%, rgba(119, 119, 119, 0) 100%);
+  width: 100%;
+  aspect-ratio: 2;
+}
+.desk-nav {
+  margin-top: 58px;
+}
+.desk-nav .logo {
+  color: var(--primary);
+  font-family: Inter;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 120%;
+}
+.desk-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 47px;
+}
+.nav li a {
+  color: var(--white);
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 8px 20px;
+}
+.nav li a:hover,
+.nav li a.active {
+  border-radius: 46px;
+  background-color: var(--primary);
+}
+.mobile-nav-ctr .ham {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.mobile-nav-ctr .ham span {
+  width: 24px;
+  height: 2px;
+  background-color: var(--white);
+  border-radius: 2px;
+}
+/* Header css end  */
+
+/* Media query start  */
+/* Extra small or mobile device css start  */
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .nav {
+    display: none;
+  }
+  .desk-nav {
+    margin-top: 50px;
+  }
+}
+/* Extra small or mobile device css end  */
+
+/* Medium devices (tablets, 768px and up)  css start */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container {
+    max-width: 720px;
+  }
+  .nav {
+    display: none;
+  }
+  .desk-nav {
+    margin-top: 50px;
+  }
+}
+/* Medium devices (tablets, 768px and up)  css end */
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .container {
+    max-width: 960px;
+  }
+  .mobile-nav-ctr {
+    display: none;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) start */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+  .mobile-nav-ctr {
+    display: none;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) end */
+/* Ultra-large devices (very large desktops, 1600px and up) start */
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1540px;
+  }
+}
+/* Ultra-large devices (very large desktops, 1600px and up) end */
+
+/* Media query end  */
