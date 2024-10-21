@@ -299,6 +299,27 @@ header {
 
 /* Change your habits section start end */
 
+/* Run extra mile easily section css start */
+.run-extra-sec .flex {
+  display: flex;
+  padding: 30px 54px;
+  border-radius: 18px;
+  background: #222;
+  align-items: center;
+  gap: 165px;
+}
+
+.run-extra-sec .flex img {
+  border-radius: 18px;
+}
+.run-extra-sec .flex p {
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 34px;
+}
+
+/* Run extra mile easily section css end */
+
 /* Media query start  */
 /* Extra small or mobile device css start  */
 @media (max-width: 576px) {
@@ -378,6 +399,20 @@ header {
     margin-right: auto;
     margin-left: auto;
   }
+  .run-extra-sec .flex {
+    flex-direction: column;
+    gap: 30px;
+    padding: 33px;
+  }
+  .run-extra-sec .flex .section-title {
+    width: 100%;
+  }
+  .extra-run-img img {
+    width: 100%;
+  }
+  .run-extra-sec .text-sec .btn-fill {
+    width: 100%;
+  }
 }
 
 /* Extra small or mobile device css end  */
@@ -403,6 +438,27 @@ header {
   .cng-habbit-sec .grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .run-extra-sec .flex {
+    gap: 30px;
+    padding: 33px;
+    justify-content: space-between;
+  }
+  .run-extra-sec .extra-run-img {
+    width: 256px;
+    overflow: hidden;
+    height: 319px;
+    border-radius: 18px;
+  }
+  .run-extra-sec .extra-run-img img {
+    object-fit: cover;
+    object-position: center !important;
+    position: relative;
+    /* left: -50px; */
+    width: 100%;
+  }
+  .run-extra-sec .text-sec {
+    width: 263px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up)  css end */
@@ -422,6 +478,11 @@ header {
     width: 670px;
     text-align: center;
   }
+
+  .run-extra-sec .flex {
+    gap: 30px;
+    padding: 33px;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) start */
@@ -431,6 +492,9 @@ header {
   }
   .mobile-nav-ctr {
     display: none;
+  }
+  .run-extra-sec .flex .section-title {
+    width: 400px;
   }
 }
 /* Extra large devices (large desktops, 1200px and up) end */
