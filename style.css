@@ -98,6 +98,13 @@ body {
   line-height: 24px; /* 171.429% */
   letter-spacing: 0.3px;
 }
+p {
+  color: var(--sm-text);
+  font-weight: 400;
+}
+.flex {
+  display: flex;
+}
 /* Global css end  */
 
 /* Header css start  */
@@ -150,6 +157,89 @@ header {
   background-color: var(--white);
   border-radius: 2px;
 }
+/* Banner section css start  */
+.banner-sec {
+}
+.banner-sec .ba-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 167px;
+}
+.banner-sec .ba-content .content * {
+  margin-top: 28px;
+}
+.banner-sec .ba-content .content p {
+  letter-spacing: 0.5;
+}
+.banner-sec .ba-content .content .flex {
+  gap: 14px;
+}
+.banner-sec .ba-content .ba-title {
+  color: var(--white);
+  font-family: Inter;
+  font-size: 78px;
+  font-weight: 900;
+  width: 520px;
+}
+.banner-sec .ba-content .ba-title span {
+  font-family: Miama;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 0;
+  font-size: 158px;
+}
+.banner-sec .ba-content .img {
+  position: relative;
+}
+.banner-sec .ba-content .img .work {
+  position: absolute;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+}
+.banner-sec .ba-content .img .work h1 {
+  color: var(--white);
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 40px; /* 100% */
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.five {
+  top: 110px;
+  right: -56px;
+}
+.three {
+  left: -118px;
+  bottom: 47px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.three h1 {
+  color: var(--white);
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 24px; /* 100% */
+  letter-spacing: 0.3px;
+}
+.three .dot {
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary);
+  border-radius: 40px;
+}
+.ba-content .content p {
+  width: 520px;
+}
+/* Banner section css end  */
 /* Header css end  */
 
 /* Media query start  */
@@ -166,6 +256,52 @@ header {
   .desk-nav {
     margin-top: 50px;
   }
+  .banner-sec .ba-content {
+    flex-direction: column;
+    gap: 58px;
+  }
+  .banner-sec .ba-content .content {
+    width: 100%;
+  }
+  .banner-sec .ba-content .ba-title {
+    font-size: 36px;
+    width: 100%;
+  }
+  .banner-sec .ba-content .ba-title span {
+    font-size: 70px;
+  }
+  .btn-fill,
+  .btn-out:hover {
+    padding: 16px 30px;
+  }
+  .btn-out,
+  .btn-fill:hover {
+    padding: 16px 30px;
+  }
+  .banner-sec .ba-content .img .work h1 {
+    line-height: normal;
+    font-size: 30px;
+    margin-bottom: 1px;
+  }
+  .three h1 {
+    font-size: 18px !important;
+    line-height: normal;
+  }
+  .banner-sec .ba-content .img .work p {
+    font-size: 10px;
+    line-height: normal;
+  }
+  .five {
+    top: 39px;
+    right: 8px;
+  }
+  .three {
+    left: -8px;
+    bottom: 237px;
+  }
+}
+.ba-content .content p {
+  width: 100%;
 }
 /* Extra small or mobile device css end  */
 
@@ -180,6 +316,13 @@ header {
   .desk-nav {
     margin-top: 50px;
   }
+  .banner-sec .ba-content {
+    flex-direction: column;
+    gap: 100px;
+  }
+  .banner-sec .ba-content .content {
+    width: 100%;
+  }
 }
 /* Medium devices (tablets, 768px and up)  css end */
 /* Large devices (desktops, 992px and up) */
@@ -189,6 +332,10 @@ header {
   }
   .mobile-nav-ctr {
     display: none;
+  }
+  .banner-sec .ba-content {
+    flex-direction: column;
+    gap: 100px;
   }
 }
 
