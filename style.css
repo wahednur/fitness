@@ -103,6 +103,16 @@ p {
   color: var(--sm-text);
   font-weight: 400;
 }
+.title-info {
+  width: 671px;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
 .flex {
   display: flex;
 }
@@ -257,7 +267,11 @@ header {
   margin-left: auto;
   margin-bottom: 54px;
 }
-
+.sect-heading-centre .title-info,
+.price-title-area .title-info {
+  margin-right: auto;
+  margin-left: auto;
+}
 .cng-habbit-sec .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -686,6 +700,39 @@ hr {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 /* footer section css end  */
+
+/* Price and package section css start  */
+.price-sec .price-title-area {
+  text-align: center;
+}
+.price-ara .plane {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.price-ara .plane .title {
+  color: var(--white);
+  font-size: 25px;
+  border-bottom: 1px solid var(--primary);
+  padding-bottom: 20px;
+}
+.price-ara .plane h1 {
+  font-size: 48px;
+  color: var(--primary);
+  font-weight: 300;
+}
+.price-ara .plane .price-item {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background-color: #ffffff1a;
+  padding: 20px;
+  border-radius: 10px;
+}
+.price-ara .plane .price-item i {
+  color: var(--primary);
+}
+/* Price and package section css end  */
 /* Media query start  */
 
 /* Extra small or mobile device css start  */
@@ -694,6 +741,9 @@ hr {
     max-width: 100%;
     padding-left: 12px;
     padding-right: 12px;
+  }
+  .title-info {
+    width: 100%;
   }
   .mt-100 {
     margin-top: 60px;
@@ -842,6 +892,9 @@ hr {
   .footer-sec {
     width: 100% !important;
   }
+  .price-ara .plane {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /* Extra small or mobile device css end  */
@@ -860,6 +913,9 @@ hr {
   .banner-sec .ba-content {
     flex-direction: column;
     gap: 100px;
+  }
+  .run-extra-sec .title-info {
+    width: 300px;
   }
   .banner-sec .ba-content .content {
     width: 100%;
@@ -886,7 +942,7 @@ hr {
     width: 100%;
   }
   .run-extra-sec .text-sec {
-    width: 263px;
+    width: 300px;
   }
 
   .exercises-sec .img-gallery .item-1 {
@@ -982,6 +1038,9 @@ hr {
     display: flex;
     flex-direction: row !important;
   }
+  .price-ara .plane {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Medium devices (tablets, 768px and up)  css end */
@@ -1058,6 +1117,9 @@ hr {
   }
   .footer-sec .flex {
     gap: 80px !important;
+  }
+  .price-ara .plane {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
