@@ -586,6 +586,56 @@ select:hover {
 }
 /* BMI Calculator section end */
 
+/* Meet Our Team section css start  */
+.meet-team-sec .title-sec {
+  text-align: center;
+  margin-bottom: 58px;
+}
+.meet-team-sec .title-sec p {
+  width: 671px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.meet-team-sec .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  background: #ffffff1a;
+  border-radius: 18px;
+}
+.meet-team-sec .grid .team-item {
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+}
+.meet-team-sec .grid .team-item img {
+  width: 100%;
+  scale: 102%;
+}
+.meet-team-sec .grid .team-item .info{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.meet-team-sec .grid .team-item .info h4{
+  color: var(--white);
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 900;
+line-height: 120%; 
+}
+.meet-team-sec .grid .team-item .info p{
+  color: rgba(255, 255, 255, 0.50);
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; 
+}
+/* Meet Our Team section css end  */
+
 /* Media query start  */
 
 /* Extra small or mobile device css start  */
@@ -719,6 +769,14 @@ select:hover {
   .bmi-table .flex .bmi-calc {
     width: 100%;
   }
+  .meet-team-sec .title-sec p {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+  }
+  .meet-team-sec .grid {
+  grid-template-columns: repeat(1, 1fr);}
 }
 
 /* Extra small or mobile device css end  */
@@ -829,6 +887,19 @@ select:hover {
   .bmi-table .flex .bmi-calc {
     width: 100%;
   }
+  .meet-team-sec .title-sec p {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+  }
+  .meet-team-sec .grid .team-item {
+    height: 272px;
+  }
+  .meet-team-sec .grid .team-item img{
+    height: 272px;
+    object-fit: cover;
+    object-position: top;
 }
 
 /* Medium devices (tablets, 768px and up)  css end */
