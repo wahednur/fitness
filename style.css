@@ -654,7 +654,8 @@ select:hover {
   display: flex;
   gap: 102px;
 }
-.footer-sec .flex .f-item {
+.footer-sec .flex .f-item,
+.f-logo {
   width: 50%;
 }
 .f-info {
@@ -977,6 +978,10 @@ hr {
   .footer-sec .f-info {
     width: 443px;
   }
+  .f-item {
+    display: flex;
+    flex-direction: row !important;
+  }
 }
 
 /* Medium devices (tablets, 768px and up)  css end */
@@ -1050,6 +1055,9 @@ hr {
     scale: 120%;
     object-fit: cover;
     object-position: center;
+  }
+  .footer-sec .flex {
+    gap: 80px !important;
   }
 }
 
