@@ -321,7 +321,7 @@ header {
 /* Run extra mile easily section css end */
 
 /* Trainings and Exercises section css start */
-/* Trainings and Exercises section css end */
+
 .exercises-sec {
 }
 .exercises-sec .img-gallery {
@@ -477,7 +477,117 @@ header {
   position: absolute;
   z-index: 1;
 }
+/* Trainings and Exercises section css end */
+/* BMI Calculator section start */
+.bmi-sec .bmi-title {
+  width: 671px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bmi-table {
+  background: #ffffff1a;
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+.flex {
+  display: flex;
+}
+.bmi-table .flex {
+  justify-content: space-between;
+  gap: 175px;
+}
+.bmi-table .flex .bmi-chart,
+.bmi-table .flex .bmi-calc {
+  width: 50%;
+}
+.bmi-table h4 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%;
+  margin-bottom: 14px;
+}
+.table {
+  width: 100%;
+}
+.table tr {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  text-align: left;
+  padding: 15px 20px;
+  border: 1px solid #ffffff1a;
+}
+.table thead {
+  color: var(--white);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+.table tr {
+  border-bottom: none;
+  margin-top: -2px;
+}
+.table tr:last-child {
+  border-bottom: 1px solid #ffffff1a;
+}
+.table tr th,
+.table tr td {
+  text-align: left !important;
+  float: left;
+  width: 50%;
+}
+.table tbody {
+  margin-top: -2px;
+  color: #ffffff80;
+}
+.bmi-calc .row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.frm-ctr {
+  width: 100%;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px 20px;
+  border: none;
+  float: left;
+  height: 54px;
+}
+.frm-ctr::placeholder,
+option,
+select {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  border-radius: 8px;
+}
+option,
+select {
+  background: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  padding: 15px 20px;
+}
+select:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.bmi-calc .btn-fill,
+.from {
+  margin-top: 34px;
+}
+/* BMI Calculator section end */
+
 /* Media query start  */
+
 /* Extra small or mobile device css start  */
 @media (max-width: 576px) {
   .container {
@@ -598,6 +708,17 @@ header {
   .exercises-sec .img-gallery .item-6 {
     width: 48%;
   }
+  .bmi-sec .bmi-title {
+    width: 100%;
+  }
+  .bmi-table .flex {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .bmi-table .flex .bmi-chart,
+  .bmi-table .flex .bmi-calc {
+    width: 100%;
+  }
 }
 
 /* Extra small or mobile device css end  */
@@ -694,6 +815,19 @@ header {
     scale: 120%;
     object-fit: cover;
     object-position: center;
+  }
+  .bmi-sec .bmi-title {
+    width: 100%;
+  }
+  .bmi-table .flex {
+    flex-direction: column;
+    gap: 82px;
+  }
+  .bmi-table .flex .bmi-chart {
+    width: 50%;
+  }
+  .bmi-table .flex .bmi-calc {
+    width: 100%;
   }
 }
 
